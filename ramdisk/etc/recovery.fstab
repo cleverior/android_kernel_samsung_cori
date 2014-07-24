@@ -4,13 +4,12 @@
 # http://source.android.com/devices/tech/storage/index.html
 #
 #<src>						<mnt_point>		<type>	<mnt_flags and options>	<fs_mgr_flags>
-/dev/block/mmcblk0p7		/system			ext4	ro			check,wait
-/dev/block/mmcblk0p8		/cache			ext4	nosuid,nodev		check,wait
-/dev/block/mmcblk0p9		/data			ext4	nosuid,nodev		check,wait
-/dev/block/mmcblk0p11	    /sdcard			vfat	defaults		voldmanaged=sdcard0:auto,noemulatedsd
-/dev/block/mmcblk1p1	    /emmc			vfat	defaults		voldmanaged=sdcard1:auto,noemulatedsd
-/dev/block/mmcblk0p2		/sd-ext			ext4	defaults		recoveryonly
+/dev/block/mmcblk0p7				/system			ext4	ro			check,wait
+/dev/block/mmcblk0p8			/cache			ext4	nosuid,nodev		check,wait
+/dev/block/mmcblk0p9			/data			ext4	nosuid,nodev		check,wait
+/devices/platform/bcm_sdhc.2/mmc_host/mmc1	auto			vfat	defaults		voldmanaged=sdcard0:auto,noemulatedsd
+/devices/platform/bcm_sdhc.3/mmc_host/mmc2	auto			vfat	defaults		voldmanaged=sdcard1:auto,noemulatedsd
+/dev/block/mmcblk1p2				/sd-ext			ext4	defaults		recoveryonly
 boot						/boot			bml	defaults		recoveryonly
 recovery					/recovery		bml	defaults		recoveryonly
-/dev/block/zram0			none			swap	defaults		zramsize=50331648,swapprio=1
-
+/dev/block/zram0				none			swap	defaults		zramsize=50331648,swapprio=1
