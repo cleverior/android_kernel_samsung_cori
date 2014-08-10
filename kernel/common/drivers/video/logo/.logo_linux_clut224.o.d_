@@ -1,0 +1,4 @@
+logo_linux_clut224.o: drivers/video/logo/logo_linux_clut224.c \
+ include/generated/autoconf.h include/linux/linux_logo.h \
+ include/linux/init.h include/linux/compiler.h \
+ include/linux/compiler-gcc.h include/linux/compiler-gcc4.h
